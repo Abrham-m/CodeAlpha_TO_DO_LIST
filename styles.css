@@ -1,0 +1,117 @@
+body {
+    background-color: #44371c; /* Warm yellow background */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #040403; /* Light black background for the container */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    color: #FF7043; /* Darker orange for the heading */
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #FF7043;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: all 0.4s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border: 2px solid #FF7043;
+    box-shadow: 0 0 0 2px rgba(255, 112, 67, 0.3);
+}
+
+
+button {
+    background-color: #FF7043;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #FF5722; /* Slightly darker orange on hover */
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.todo-list li {
+    background-color: #FFE0B2; /* Light orange for list items */
+    padding: 10px;
+    position: relative;
+    padding-right: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.close-btn{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #221511;
+    font-weight: bold;
+}
+
+.clos-btn:hover{
+    color: #1b0e0a;
+}
+.todo-list li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer span {
+    color: #FF7043;
+}
+
+.footer button {
+    background-color: #FF7043;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer button:hover {
+    background-color: #FF5722; /* Slightly darker orange on hover */
+}
